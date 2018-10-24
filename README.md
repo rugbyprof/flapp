@@ -8,6 +8,9 @@ Friends Location App
 Firebase data types:
 https://firebase.google.com/docs/firestore/manage-data/data-types
 
+### Modeling No-Sql Data
+https://www.youtube.com/watch?v=jm66TSlVtcc&list=PL0vfts4VzfNiPCzuRPXFZS1Hnw_RvVEXR
+
 **User Collection:**
 
 There will be a user collection that stores general user information along with a sub-collection of user locations.
@@ -119,12 +122,12 @@ ___Example Json___:
     "email": "joe.smith@gmail.com",
     "registered": "October 24, 2018 at 12:00:00 AM UTC-5",
     "locations": [
-        "0239hu23jhv4": {
+        "0239hu23jhv4" : {
             "location-type": "check-in",
             "location": ["33.93874° N", "122.29837° W"],
             "stamp": "October 24, 2018 at 12:00:00 AM UTC-5"
         },
-        "q2341fdqwer": {
+        "q2341fdqwer" : {
             "location-type": "geo-tag",
             "location": ["32.93874° N", "112.29837° W"],
             "stamp": "October 21, 2018 at 12:00:00 AM UTC-5"
@@ -132,7 +135,7 @@ ___Example Json___:
         {
             "many":"more locations"
         },
-        "sdfgar2345": {
+        "sdfgar2345" : {
             "location-type": "home",
             "location": ["32.93874° N", "112.29837° W"],
             "stamp": "October 21, 2018 at 12:00:00 AM UTC-5"
