@@ -27,7 +27,7 @@ ___Example Json___:
     "last": "smith",
     "email": "joe.smith@gmail.com",
     "registered": "October 24, 2018 at 12:00:00 AM UTC-5",
-    "locations": "sub-collection of locations"
+    "locations": "sub-collection of locations",
     "groups" : "sub-collection of group_ids"
 }
 ```
@@ -62,10 +62,10 @@ A list of location types with descriptions.
 ___Example___:
 ```json
 {
-    location-type: favorite,
-    description: "A favorite location that you frequent often.",
-    date-created: October 24, 2018 at 12:00:00 AM UTC-5,
-    creator-id : 0239hu23jhv4
+    "location-type": "favorite",
+    "description": "A favorite location that you frequent often.",
+    "date-created": "October 24, 2018 at 12:00:00 AM UTC-5",
+    "creator-id" : "0239hu23jhv4"
 }
 ```
 
@@ -102,7 +102,7 @@ A list of group types with descriptions.
 ___Example___:
 ```json
 {
-    "group-type': "friends",
+    "group-type": "friends",
     "description": "All of Joe's freinds.",
     "date-created": "October 24, 2018 at 12:00:00 AM UTC-5",
     "creator-id" : "0239hu23jhv4"
@@ -124,19 +124,21 @@ ___Example Json___:
             "location": ["33.93874° N", "122.29837° W"],
             "stamp": "October 24, 2018 at 12:00:00 AM UTC-5"
         },
-        q2341fdqwer: {
+        "q2341fdqwer": {
             "location-type": "geo-tag",
             "location": ["32.93874° N", "112.29837° W"],
             "stamp": "October 21, 2018 at 12:00:00 AM UTC-5"
         },
-        ...
-        sdfgar2345: {
+        {
+            "many":"more locations"
+        },
+        "sdfgar2345": {
             "location-type": "home",
             "location": ["32.93874° N", "112.29837° W"],
             "stamp": "October 21, 2018 at 12:00:00 AM UTC-5"
         }
     ]
-    groups : [
+    "groups" : [
         "12341345dsad",
         "adsfwqerf3453"
     ]
