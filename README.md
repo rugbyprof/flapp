@@ -25,7 +25,7 @@ ___Example Json___:
 {
     "first": "joe",
     "last": "smith",
-    "email": joe.smith@gmail.com,
+    "email": "joe.smith@gmail.com",
     "registered": "October 24, 2018 at 12:00:00 AM UTC-5",
     "locations": "sub-collection of locations"
     "groups" : "sub-collection of group_ids"
@@ -43,9 +43,9 @@ Each user will have their own collection of locations that stores a location alo
 ___Example___:
 ```json
 {
-    location: [33.93874° N, 122.29837° W],
-    stamp: October 24, 2018 at 12:00:00 AM UTC-5,
-    type: [geotag, checkin, favorite, home, etc.]
+    "location": ["33.93874° N", "122.29837° W"],
+    "stamp": "October 24, 2018 at 12:00:00 AM UTC-5",
+    "type": ["geotag", "check-in", "favorite", "home", "etc."]
 }
 ```
 
@@ -82,10 +82,10 @@ A list of top level locations of users, showing latest locations. This collectio
 ___Example___:
 ```json
 {
-    location-type: 324kjh34,
-    location: [33.93874° N, 122.29837° W],
-    last-updated: October 24, 2018 at 12:00:00 AM UTC-5,
-    user-id : 0239hu23jhv4
+    "location-type": "check-in",
+    "location": ["33.93874° N", "122.29837° W"],
+    "last-updated": "October 24, 2018 at 12:00:00 AM UTC-5",
+    "user-id" : "0239hu23jhv4"
 }
 ```
 
@@ -102,10 +102,10 @@ A list of group types with descriptions.
 ___Example___:
 ```json
 {
-    group-type: friends,
-    description: "All of Joe's freinds.",
-    date-created: October 24, 2018 at 12:00:00 AM UTC-5,
-    creator-id : 0239hu23jhv4
+    "group-type': "friends",
+    "description": "All of Joe's freinds.",
+    "date-created": "October 24, 2018 at 12:00:00 AM UTC-5",
+    "creator-id" : "0239hu23jhv4"
 }
 ```
 
@@ -114,31 +114,31 @@ ___Example___:
 ___Example Json___:
 ```json
 {
-    first: joe,
-    last: smith,
-    email: joe.smith@gmail.com,
-    registered: October 24, 2018 at 12:00:00 AM UTC-5,
-    locations: [
-        0239hu23jhv4: {
-            location: [33.93874° N, 122.29837° W],
-            stamp: October 24, 2018 at 12:00:00 AM UTC-5,
-            type: check-in
+    "first": "joe",
+    "last": "smith",
+    "email": "joe.smith@gmail.com",
+    "registered": "October 24, 2018 at 12:00:00 AM UTC-5",
+    "locations": [
+        "0239hu23jhv4": {
+            "location-type": "check-in",
+            "location": ["33.93874° N", "122.29837° W"],
+            "stamp": "October 24, 2018 at 12:00:00 AM UTC-5"
         },
         q2341fdqwer: {
-            location: [33.93874° N, 122.29837° W],
-            stamp: October 24, 2018 at 12:00:00 AM UTC-5,
-            type: geotag
+            "location-type": "geo-tag",
+            "location": ["32.93874° N", "112.29837° W"],
+            "stamp": "October 21, 2018 at 12:00:00 AM UTC-5"
         },
         ...
         sdfgar2345: {
-            location: [33.93874° N, 122.29837° W],
-            stamp: October 24, 2018 at 12:00:00 AM UTC-5,
-            type: home
+            "location-type": "home",
+            "location": ["32.93874° N", "112.29837° W"],
+            "stamp": "October 21, 2018 at 12:00:00 AM UTC-5"
         }
     ]
     groups : [
-        12341345dsad,
-        adsfwqerf3453
+        "12341345dsad",
+        "adsfwqerf3453"
     ]
 }
 ```
