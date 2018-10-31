@@ -72,7 +72,9 @@
 #### 3) Routing / Location Based Services Team
 
 - A google geo-location service wrapper that provides basic geo location functionality preferably as a service but the customer will be ok if the geo-location services are not fully decoupled from the views.
+
 - **Resources:**
+    - https://github.com/mapsplugin/ionic-map-provider-example (map as a service)
     - https://github.com/ionic-team/ionic-native-google-maps/tree/master/documents
     - https://codeburst.io/native-google-maps-and-geolocation-ionic-fe635a00249d
 - **Map Visualization Service:**
